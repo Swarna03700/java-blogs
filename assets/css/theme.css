@@ -40,7 +40,9 @@ nav a:hover {
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    overflow: auto; /* --- ADD THIS LINE TO FIX THE OVERLAP --- */
 }
+
 .post:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.08);
@@ -48,8 +50,8 @@ nav a:hover {
 
 /* Post Titles */
 .post-title, h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
+    font-family: 'Roboto', serif;
+    font-weight: 500;
     margin-top: 0;
     color: #111;
 }

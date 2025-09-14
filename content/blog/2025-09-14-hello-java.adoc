@@ -5,14 +5,46 @@ Swarnadeep Ghosh
 :jbake-tags: java, programming, hello world
 :jbake-status: published
 
-This is a simple "Hello, World!" program written in Java.
+Welcome to **Hello, Java** — a curated space where backend engineering meets clarity, structure, and purpose.
+
+This blog is designed for developers who want to go beyond surface-level tutorials and explore the deeper principles that make Java a powerful, scalable, and resilient language. Whether you're just starting out or refining your system design skills, you'll find articles here that break down complex topics into actionable insights.
+
 
 [source,java]
 ----
 public class HelloWorld {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+        System.out.println("Hello, Java!");
     }
 }
 ----
+
+[Console]
+----
+Hello, Java!
+
+----
+
+== What You'll Find Here
+
+- **Java Fundamentals Explained Clearly**  
+  From object-oriented programming to memory models, each concept is unpacked with real-world examples and clean code.
+
+- **Modern Backend Practices**  
+  Explore how Java fits into today's architectures — including microservices, concurrency models, and cloud-native frameworks.
+
+- **System Design & Fintech Insights**  
+  Learn how to build modular, compliant systems like digital wallets and ledger services, with a focus on reliability and scalability.
+
+- **Developer Productivity & Tooling**  
+  Discover workflows, IDE tips, and automation strategies that help you write better code, faster.
+
+== Why This Blog Exists
+
+As a backend engineer and systems thinker, I created Hello, Java to share what I’ve learned — and what I’m still learning — about building software that lasts. Each post is crafted to be both technically rigorous and practically useful, so you can apply what you read directly to your own projects.
+
+Whether you're here to deepen your understanding of Java or to explore architectural patterns that scale, I hope these articles help you build with confidence and clarity.
+
+Thanks for visiting — and keep building.
+
 

@@ -15,7 +15,7 @@
             <span class="icon-bar"></span>
           </button>
           
-           <a class="navbar-brand" th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:href="${rootpath}"><img th:src="${rootpath} + 'assets/hello-java-logo.png'" alt="Site Logo" style="height: 30px; margin-top: -10px;"/></a>
+           <a class="navbar-brand" th:with="rootpath=(${content.rootpath != null} ? ${content.rootpath} : '')" th:href="${rootpath}"><img th:src="${rootpath} + 'img/hello-java-logo.png'" alt="Site Logo" style="height: 60px; margin-top: -10px;"/></a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">

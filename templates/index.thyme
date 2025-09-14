@@ -11,10 +11,12 @@
 			</div>
 			
 			<div th:each="post : ${published_posts}">
+			
 				<a th:href='${post.uri}' href='href'><h1 th:text='${post.title}'>title</h1></a>
 				<p th:text='${#dates.format(post.date,"dd MMMM yyyy")}'>date</p>
-				<p th:utext='${post.body}'>body</p>
+				
 				<p th:utext="${#strings.abbreviate(post.body, 200)}"></p>
+			 
 			</div>
 				
 			<hr />
@@ -23,6 +25,6 @@
 		</div>
 	</div>
 	
-	<div th:replace="footer.thyme::footer"></div>
+	<div th:replace="footer.thyme::footer" class="footer"></div>
     </body>
 </html>
