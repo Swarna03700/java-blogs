@@ -1,29 +1,80 @@
 <?xml version="1.0"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>JBake</title>
+    <title>Hello Java</title>
     <link>http://jbake.org</link>
     <atom:link href="http://jbake.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>JBake Bootstrap Template</description>
     <language>en-gb</language>
-    <pubDate>Sun, 14 Sep 2025 13:13:35 +0000</pubDate>
-    <lastBuildDate>Sun, 14 Sep 2025 13:13:35 +0000</lastBuildDate>
+    <pubDate>Sun, 14 Sep 2025 15:56:28 +0000</pubDate>
+    <lastBuildDate>Sun, 14 Sep 2025 15:56:28 +0000</lastBuildDate>
 
     <item>
       <title>Hello Java</title>
       <link>http://jbake.org/blog/2025-09-14-hello-java.html</link>
       <pubDate>Sun, 14 Sep 2025 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">blog/2025-09-14-hello-java.html</guid>
-      <description>&amp;lt;div class=&amp;quot;paragraph&amp;quot;&amp;gt;
-&amp;lt;p&amp;gt;This is a simple &amp;quot;Hello, World!&amp;quot; program written in Java.&amp;lt;/p&amp;gt;
+      <description>&amp;lt;div id=&amp;quot;preamble&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;sectionbody&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;paragraph&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;Welcome to &amp;lt;strong&amp;gt;Hello, Java&amp;lt;/strong&amp;gt; — a curated space where backend engineering meets clarity, structure, and purpose.&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;paragraph&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;This blog is designed for developers who want to go beyond surface-level tutorials and explore the deeper principles that make Java a powerful, scalable, and resilient language. Whether you&amp;amp;#8217;re just starting out or refining your system design skills, you&amp;amp;#8217;ll find articles here that break down complex topics into actionable insights.&amp;lt;/p&amp;gt;
 &amp;lt;/div&amp;gt;
 &amp;lt;div class=&amp;quot;listingblock&amp;quot;&amp;gt;
 &amp;lt;div class=&amp;quot;content&amp;quot;&amp;gt;
 &amp;lt;pre class=&amp;quot;prettyprint highlight&amp;quot;&amp;gt;&amp;lt;code data-lang=&amp;quot;java&amp;quot;&amp;gt;public class HelloWorld {
     public static void main(String[] args) {
-        System.out.println(&amp;quot;Hello, World!&amp;quot;);
+        System.out.println(&amp;quot;Hello, Java!&amp;quot;);
     }
 }&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;listingblock&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;content&amp;quot;&amp;gt;
+&amp;lt;pre&amp;gt;Hello, Java!&amp;lt;/pre&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;sect1&amp;quot;&amp;gt;
+&amp;lt;h2 id=&amp;quot;_what_youll_find_here&amp;quot;&amp;gt;What You&amp;amp;#8217;ll Find Here&amp;lt;/h2&amp;gt;
+&amp;lt;div class=&amp;quot;sectionbody&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;ulist&amp;quot;&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;Java Fundamentals Explained Clearly&amp;lt;/strong&amp;gt;
+From object-oriented programming to memory models, each concept is unpacked with real-world examples and clean code.&amp;lt;/p&amp;gt;
+&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;Modern Backend Practices&amp;lt;/strong&amp;gt;
+Explore how Java fits into today&amp;amp;#8217;s architectures — including microservices, concurrency models, and cloud-native frameworks.&amp;lt;/p&amp;gt;
+&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;System Design &amp;amp;amp; Fintech Insights&amp;lt;/strong&amp;gt;
+Learn how to build modular, compliant systems like digital wallets and ledger services, with a focus on reliability and scalability.&amp;lt;/p&amp;gt;
+&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;Developer Productivity &amp;amp;amp; Tooling&amp;lt;/strong&amp;gt;
+Discover workflows, IDE tips, and automation strategies that help you write better code, faster.&amp;lt;/p&amp;gt;
+&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;sect1&amp;quot;&amp;gt;
+&amp;lt;h2 id=&amp;quot;_why_this_blog_exists&amp;quot;&amp;gt;Why This Blog Exists&amp;lt;/h2&amp;gt;
+&amp;lt;div class=&amp;quot;sectionbody&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;paragraph&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;As a backend engineer and systems thinker, I created Hello, Java to share what I’ve learned — and what I’m still learning — about building software that lasts. Each post is crafted to be both technically rigorous and practically useful, so you can apply what you read directly to your own projects.&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;paragraph&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;Whether you&amp;amp;#8217;re here to deepen your understanding of Java or to explore architectural patterns that scale, I hope these articles help you build with confidence and clarity.&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;paragraph&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;Thanks for visiting — and keep building.&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
 &amp;lt;/div&amp;gt;
 &amp;lt;/div&amp;gt;</description>	  
     </item><item>

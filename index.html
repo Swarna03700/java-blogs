@@ -45,7 +45,7 @@
             <span class="icon-bar"></span>
           </button>
           
-           <a class="navbar-brand" href=""><img src="assets/hello-java-logo.png" alt="Site Logo" style="height: 30px; margin-top: -10px;"/></a>
+           <a class="navbar-brand" href=""><img src="img/hello-java-logo.png" alt="Site Logo" style="height: 60px; margin-top: -10px;"/></a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -76,305 +76,39 @@
 			</div>
 			
 			<div>
+			
 				<a href='blog/2025-09-14-hello-java.html'><h1>Hello Java</h1></a>
 				<p>14 September 2025</p>
-				<p><div class="paragraph">
-<p>This is a simple "Hello, World!" program written in Java.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code data-lang="java">public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
-}</code></pre>
-</div>
-</div></p>
-				<p><div class="paragraph">
-<p>This is a simple "Hello, World!" program written in Java.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code data-lang="...</p>
-			</div>
-			
-			<div>
-				<a href='blog/2025-09-14-what-makes-java-an-object-oriented-programming-language.html'><h1>What Makes Java an Object-Oriented Programming Language?</h1></a>
-				<p>14 September 2025</p>
+				
 				<p><div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>Java is often described as a <strong>pure</strong> object-oriented language — and while there’s debate about that term, there’s no doubt that Java’s design is deeply rooted in OOP principles.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_everything_revolves_around_objects">Everything Revolves Around Objects</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>In Java, almost everything (except primitives) is an object. Classes define the blueprint, and objects are the runtime instances that hold state and behavior.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code data-lang="java">public class Employee {
-    private String name;
-    private double salary;
-
-    public Employee(String name, double salary) {
-        this.name = name;
-        this.salary = salary;
-    }
-
-    public void raiseSalary(double percent) {
-        salary += salary * percent / 100;
-    }
-}</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p><strong>Explanation:</strong>
-Here, <code>Employee</code> is a class (the blueprint), and each <code>Employee</code> object has its own <code>name</code> and <code>salary</code>. The <code>raiseSalary</code> method changes the state of that specific object — a core OOP idea.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_how_java_implements_oop_principles">How Java Implements OOP Principles</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_1_encapsulation">1. Encapsulation</h3>
-<div class="paragraph">
-<p>Java enforces encapsulation through access modifiers (<code>private</code>, <code>protected</code>, <code>public</code>) and getter/setter methods.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_2_inheritance">2. Inheritance</h3>
-<div class="paragraph">
-<p>Java supports single inheritance via the <code>extends</code> keyword, and multiple inheritance of type via <code>interfaces</code>.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code data-lang="java">class Animal {
-    void eat() { System.out.println("Eating..."); }
-}
-
-class Dog extends Animal {
-    void bark() { System.out.println("Barking..."); }
-}</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p><strong>Explanation:</strong>
-<code>Dog</code> inherits the <code>eat()</code> method from <code>Animal</code> without rewriting it, and adds its own <code>bark()</code> method. This shows how Java reuses and extends behavior.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_3_polymorphism">3. Polymorphism</h3>
-<div class="paragraph">
-<p>Java supports both compile-time (method overloading) and runtime (method overriding) polymorphism.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_4_abstraction">4. Abstraction</h3>
-<div class="paragraph">
-<p>Java provides <code>abstract</code> classes and <code>interfaces</code> to hide implementation details and define contracts.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code data-lang="java">interface PaymentProcessor {
-    void process(double amount);
-}
-
-class CreditCardProcessor implements PaymentProcessor {
-    public void process(double amount) {
-        System.out.println("Processing credit card payment: " + amount);
-    }
-}</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p><strong>Explanation:</strong>
-The <code>PaymentProcessor</code> interface defines <strong>what</strong> should be done (<code>process</code>), but not <strong>how</strong>. <code>CreditCardProcessor</code> provides the actual implementation. This allows different payment processors to be swapped without changing the calling code.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_additional_oop_friendly_features">Additional OOP-Friendly Features</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Packages</strong> for organizing classes into namespaces.</p>
-</li>
-<li>
-<p><strong>Garbage Collection</strong> to manage object lifecycles automatically.</p>
-</li>
-<li>
-<p><strong>Strong Typing</strong> to catch errors at compile time.</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_why_this_matters">Why This Matters</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>By embracing OOP, Java enables developers to:
-- Model real-world systems naturally.
-- Build modular, maintainable, and reusable codebases.
-- Scale applications without losing structure.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_conclusion">Conclusion</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Java’s syntax, libraries, and runtime are all designed to encourage OOP best practices. Whether you’re building a small utility or a large enterprise system, understanding Java’s OOP features is key to writing clean, maintainable code.</p>
-</div>
-</div>
-</div></p>
+<p>Welcome to <strong>Hello, Java</strong> — a curated space where backend engineering meets clarity, structure, and purpose.</...</p>
+			 
+			</div>
+			
+			<div>
+			
+				<a href='blog/2025-09-14-what-makes-java-an-object-oriented-programming-language.html'><h1>What Makes Java an Object-Oriented Programming Language?</h1></a>
+				<p>14 September 2025</p>
+				
 				<p><div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
 <p>Java is often described as a <strong>pure</strong> object-oriented language — and while there’s debate about that term, ther...</p>
+			 
 			</div>
 			
 			<div>
+			
 				<a href='blog/2025-09-14-what-is-object-oriented-programming.html'><h1>What is Object-Oriented Programming?</h1></a>
 				<p>14 September 2025</p>
-				<p><div id="preamble">
-<div class="sectionbody">
-<div class="paragraph">
-<p>Object-Oriented Programming (OOP) is a programming paradigm built around the concept of <strong>objects</strong> — self-contained units that combine <strong>data</strong> (attributes) and <strong>behavior</strong> (methods) into a single entity.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_why_oop_exists">Why OOP Exists</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Before OOP, most software followed a <strong>procedural</strong> style: step-by-step instructions operating on shared data. This worked for small programs but became messy and hard to maintain as systems grew. OOP solves this by modeling software after real-world entities, making code more modular, reusable, and easier to reason about.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_core_principles_of_oop">Core Principles of OOP</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_1_encapsulation">1. Encapsulation</h3>
-<div class="paragraph">
-<p>Encapsulation means bundling data and the methods that operate on it into a single unit, and restricting direct access to some of the object&#8217;s components.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code data-lang="java">public class BankAccount {
-    private double balance;
-
-    public void deposit(double amount) {
-        balance += amount;
-    }
-
-    public double getBalance() {
-        return balance;
-    }
-}</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p><strong>Explanation:</strong>
-Here, <code>balance</code> is private and cannot be accessed directly from outside the class. The only way to change or read it is through the <code>deposit</code> and <code>getBalance</code> methods, which control how the data is used.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_2_abstraction">2. Abstraction</h3>
-<div class="paragraph">
-<p>Abstraction hides implementation details and exposes only the necessary features.</p>
-</div>
-<div class="paragraph">
-<p>Example: You can drive a car without knowing how the engine works — in code, this means exposing a simple interface while hiding complex internals.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_3_inheritance">3. Inheritance</h3>
-<div class="paragraph">
-<p>Inheritance allows one class to acquire the properties and methods of another, promoting code reuse.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code data-lang="java">class Vehicle {
-    void start() { System.out.println("Starting..."); }
-}
-
-class Car extends Vehicle {
-    void honk() { System.out.println("Beep!"); }
-}</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p><strong>Explanation:</strong>
-<code>Car</code> inherits the <code>start()</code> method from <code>Vehicle</code> and adds its own <code>honk()</code> method. This lets you reuse existing behavior and extend it with new features.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_4_polymorphism">4. Polymorphism</h3>
-<div class="paragraph">
-<p>Polymorphism lets the same operation behave differently on different classes.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code data-lang="java">interface Shape { void draw(); }
-
-class Circle implements Shape {
-    public void draw() { System.out.println("Drawing Circle"); }
-}
-
-class Square implements Shape {
-    public void draw() { System.out.println("Drawing Square"); }
-}</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p><strong>Explanation:</strong>
-Both <code>Circle</code> and <code>Square</code> implement the same <code>Shape</code> interface, but each provides its own <code>draw()</code> method. This allows you to write code that works with <code>Shape</code> objects without knowing their exact type.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_benefits_of_oop">Benefits of OOP</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Modularity</strong>: Code is organized into independent classes.</p>
-</li>
-<li>
-<p><strong>Reusability</strong>: Classes can be reused across projects.</p>
-</li>
-<li>
-<p><strong>Maintainability</strong>: Changes in one part of the system have minimal ripple effects.</p>
-</li>
-<li>
-<p><strong>Scalability</strong>: Easier to extend with new features.</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_final_thoughts">Final Thoughts</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>OOP is not tied to a single language — it’s a way of thinking about and structuring code. Mastering its principles will make you a more effective developer, regardless of the tools you use.</p>
-</div>
-</div>
-</div></p>
+				
 				<p><div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
 <p>Object-Oriented Programming (OOP) is a programming paradigm built around the concept of <strong>objects</strong> — self-cont...</p>
+			 
 			</div>
 				
 			<hr />
