@@ -1,0 +1,87 @@
+= What Makes Java an Object-Oriented Programming Language?
+Swarnadeep
+2025-09-14
+:jbake-type: post
+:jbake-status: published
+:jbake-tags: Java, OOP, Language Features
+
+Java is often described as a *pure* object-oriented language — and while there’s debate about that term, there’s no doubt that Java’s design is deeply rooted in OOP principles.
+
+== Everything Revolves Around Objects
+In Java, almost everything (except primitives) is an object. Classes define the blueprint, and objects are the runtime instances that hold state and behavior.
+
+[source,java]
+----
+public class Employee {
+    private String name;
+    private double salary;
+
+    public Employee(String name, double salary) {
+        this.name = name;
+        this.salary = salary;
+    }
+
+    public void raiseSalary(double percent) {
+        salary += salary * percent / 100;
+    }
+}
+----
+**Explanation:**  
+Here, `Employee` is a class (the blueprint), and each `Employee` object has its own `name` and `salary`. The `raiseSalary` method changes the state of that specific object — a core OOP idea.
+
+== How Java Implements OOP Principles
+
+=== 1. Encapsulation
+Java enforces encapsulation through access modifiers (`private`, `protected`, `public`) and getter/setter methods.
+
+=== 2. Inheritance
+Java supports single inheritance via the `extends` keyword, and multiple inheritance of type via `interfaces`.
+
+[source,java]
+----
+class Animal {
+    void eat() { System.out.println("Eating..."); }
+}
+
+class Dog extends Animal {
+    void bark() { System.out.println("Barking..."); }
+}
+----
+**Explanation:**  
+`Dog` inherits the `eat()` method from `Animal` without rewriting it, and adds its own `bark()` method. This shows how Java reuses and extends behavior.
+
+=== 3. Polymorphism
+Java supports both compile-time (method overloading) and runtime (method overriding) polymorphism.
+
+=== 4. Abstraction
+Java provides `abstract` classes and `interfaces` to hide implementation details and define contracts.
+
+[source,java]
+----
+interface PaymentProcessor {
+    void process(double amount);
+}
+
+class CreditCardProcessor implements PaymentProcessor {
+    public void process(double amount) {
+        System.out.println("Processing credit card payment: " + amount);
+    }
+}
+----
+**Explanation:**  
+The `PaymentProcessor` interface defines *what* should be done (`process`), but not *how*. `CreditCardProcessor` provides the actual implementation. This allows different payment processors to be swapped without changing the calling code.
+
+== Additional OOP-Friendly Features
+- **Packages** for organizing classes into namespaces.
+- **Garbage Collection** to manage object lifecycles automatically.
+- **Strong Typing** to catch errors at compile time.
+
+== Why This Matters
+By embracing OOP, Java enables developers to:
+- Model real-world systems naturally.
+- Build modular, maintainable, and reusable codebases.
+- Scale applications without losing structure.
+
+== Conclusion
+Java’s syntax, libraries, and runtime are all designed to encourage OOP best practices. Whether you’re building a small utility or a large enterprise system, understanding Java’s OOP features is key to writing clean, maintainable code.
+

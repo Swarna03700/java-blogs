@@ -1,0 +1,82 @@
+= What is Object-Oriented Programming?
+Swarnadeep
+2025-09-14
+:jbake-type: post
+:jbake-status: published
+:jbake-tags: Java, OOP, Programming Paradigms
+
+Object-Oriented Programming (OOP) is a programming paradigm built around the concept of *objects* — self-contained units that combine **data** (attributes) and **behavior** (methods) into a single entity.
+
+== Why OOP Exists
+Before OOP, most software followed a *procedural* style: step-by-step instructions operating on shared data. This worked for small programs but became messy and hard to maintain as systems grew. OOP solves this by modeling software after real-world entities, making code more modular, reusable, and easier to reason about.
+
+== Core Principles of OOP
+
+=== 1. Encapsulation
+Encapsulation means bundling data and the methods that operate on it into a single unit, and restricting direct access to some of the object's components.
+
+[source,java]
+----
+public class BankAccount {
+    private double balance;
+
+    public void deposit(double amount) {
+        balance += amount;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+}
+----
+**Explanation:**  
+Here, `balance` is private and cannot be accessed directly from outside the class. The only way to change or read it is through the `deposit` and `getBalance` methods, which control how the data is used.
+
+=== 2. Abstraction
+Abstraction hides implementation details and exposes only the necessary features.
+
+Example: You can drive a car without knowing how the engine works — in code, this means exposing a simple interface while hiding complex internals.
+
+=== 3. Inheritance
+Inheritance allows one class to acquire the properties and methods of another, promoting code reuse.
+
+[source,java]
+----
+class Vehicle {
+    void start() { System.out.println("Starting..."); }
+}
+
+class Car extends Vehicle {
+    void honk() { System.out.println("Beep!"); }
+}
+----
+**Explanation:**  
+`Car` inherits the `start()` method from `Vehicle` and adds its own `honk()` method. This lets you reuse existing behavior and extend it with new features.
+
+=== 4. Polymorphism
+Polymorphism lets the same operation behave differently on different classes.
+
+[source,java]
+----
+interface Shape { void draw(); }
+
+class Circle implements Shape {
+    public void draw() { System.out.println("Drawing Circle"); }
+}
+
+class Square implements Shape {
+    public void draw() { System.out.println("Drawing Square"); }
+}
+----
+**Explanation:**  
+Both `Circle` and `Square` implement the same `Shape` interface, but each provides its own `draw()` method. This allows you to write code that works with `Shape` objects without knowing their exact type.
+
+== Benefits of OOP
+- **Modularity**: Code is organized into independent classes.
+- **Reusability**: Classes can be reused across projects.
+- **Maintainability**: Changes in one part of the system have minimal ripple effects.
+- **Scalability**: Easier to extend with new features.
+
+== Final Thoughts
+OOP is not tied to a single language — it’s a way of thinking about and structuring code. Mastering its principles will make you a more effective developer, regardless of the tools you use.
+
