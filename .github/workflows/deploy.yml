@@ -23,7 +23,7 @@ jobs:
         run: |
           curl -L https://github.com/jbake-org/jbake/releases/download/v2.6.7/jbake-2.6.7-bin.zip -o jbake.zip
           unzip jbake.zip -d jbake
-          sudo mv jbake/jbake-2.6.7 /opt/jbake
+          sudo mv jbake/jbake-2.6.7-bin /opt/jbake
           sudo ln -s /opt/jbake/bin/jbake /usr/local/bin/jbake
 
       - name: Bake site
