@@ -6,8 +6,8 @@
     <atom:link href="http://jbake.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>JBake Bootstrap Template</description>
     <language>en-gb</language>
-    <pubDate>Sun, 14 Sep 2025 12:35:01 +0000</pubDate>
-    <lastBuildDate>Sun, 14 Sep 2025 12:35:01 +0000</lastBuildDate>
+    <pubDate>Sun, 14 Sep 2025 13:13:35 +0000</pubDate>
+    <lastBuildDate>Sun, 14 Sep 2025 13:13:35 +0000</lastBuildDate>
 
     <item>
       <title>Hello Java</title>
@@ -24,6 +24,277 @@
         System.out.println(&amp;quot;Hello, World!&amp;quot;);
     }
 }&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;</description>	  
+    </item><item>
+      <title>What Makes Java an Object-Oriented Programming Language?</title>
+      <link>http://jbake.org/blog/2025-09-14-what-makes-java-an-object-oriented-programming-language.html</link>
+      <pubDate>Sun, 14 Sep 2025 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">blog/2025-09-14-what-makes-java-an-object-oriented-programming-language.html</guid>
+      <description>&amp;lt;div id=&amp;quot;preamble&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;sectionbody&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;paragraph&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;Java is often described as a &amp;lt;strong&amp;gt;pure&amp;lt;/strong&amp;gt; object-oriented language — and while there’s debate about that term, there’s no doubt that Java’s design is deeply rooted in OOP principles.&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;sect1&amp;quot;&amp;gt;
+&amp;lt;h2 id=&amp;quot;_everything_revolves_around_objects&amp;quot;&amp;gt;Everything Revolves Around Objects&amp;lt;/h2&amp;gt;
+&amp;lt;div class=&amp;quot;sectionbody&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;paragraph&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;In Java, almost everything (except primitives) is an object. Classes define the blueprint, and objects are the runtime instances that hold state and behavior.&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;listingblock&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;content&amp;quot;&amp;gt;
+&amp;lt;pre class=&amp;quot;prettyprint highlight&amp;quot;&amp;gt;&amp;lt;code data-lang=&amp;quot;java&amp;quot;&amp;gt;public class Employee {
+    private String name;
+    private double salary;
+
+    public Employee(String name, double salary) {
+        this.name = name;
+        this.salary = salary;
+    }
+
+    public void raiseSalary(double percent) {
+        salary += salary * percent / 100;
+    }
+}&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;paragraph&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;Explanation:&amp;lt;/strong&amp;gt;
+Here, &amp;lt;code&amp;gt;Employee&amp;lt;/code&amp;gt; is a class (the blueprint), and each &amp;lt;code&amp;gt;Employee&amp;lt;/code&amp;gt; object has its own &amp;lt;code&amp;gt;name&amp;lt;/code&amp;gt; and &amp;lt;code&amp;gt;salary&amp;lt;/code&amp;gt;. The &amp;lt;code&amp;gt;raiseSalary&amp;lt;/code&amp;gt; method changes the state of that specific object — a core OOP idea.&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;sect1&amp;quot;&amp;gt;
+&amp;lt;h2 id=&amp;quot;_how_java_implements_oop_principles&amp;quot;&amp;gt;How Java Implements OOP Principles&amp;lt;/h2&amp;gt;
+&amp;lt;div class=&amp;quot;sectionbody&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;sect2&amp;quot;&amp;gt;
+&amp;lt;h3 id=&amp;quot;_1_encapsulation&amp;quot;&amp;gt;1. Encapsulation&amp;lt;/h3&amp;gt;
+&amp;lt;div class=&amp;quot;paragraph&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;Java enforces encapsulation through access modifiers (&amp;lt;code&amp;gt;private&amp;lt;/code&amp;gt;, &amp;lt;code&amp;gt;protected&amp;lt;/code&amp;gt;, &amp;lt;code&amp;gt;public&amp;lt;/code&amp;gt;) and getter/setter methods.&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;sect2&amp;quot;&amp;gt;
+&amp;lt;h3 id=&amp;quot;_2_inheritance&amp;quot;&amp;gt;2. Inheritance&amp;lt;/h3&amp;gt;
+&amp;lt;div class=&amp;quot;paragraph&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;Java supports single inheritance via the &amp;lt;code&amp;gt;extends&amp;lt;/code&amp;gt; keyword, and multiple inheritance of type via &amp;lt;code&amp;gt;interfaces&amp;lt;/code&amp;gt;.&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;listingblock&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;content&amp;quot;&amp;gt;
+&amp;lt;pre class=&amp;quot;prettyprint highlight&amp;quot;&amp;gt;&amp;lt;code data-lang=&amp;quot;java&amp;quot;&amp;gt;class Animal {
+    void eat() { System.out.println(&amp;quot;Eating...&amp;quot;); }
+}
+
+class Dog extends Animal {
+    void bark() { System.out.println(&amp;quot;Barking...&amp;quot;); }
+}&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;paragraph&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;Explanation:&amp;lt;/strong&amp;gt;
+&amp;lt;code&amp;gt;Dog&amp;lt;/code&amp;gt; inherits the &amp;lt;code&amp;gt;eat()&amp;lt;/code&amp;gt; method from &amp;lt;code&amp;gt;Animal&amp;lt;/code&amp;gt; without rewriting it, and adds its own &amp;lt;code&amp;gt;bark()&amp;lt;/code&amp;gt; method. This shows how Java reuses and extends behavior.&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;sect2&amp;quot;&amp;gt;
+&amp;lt;h3 id=&amp;quot;_3_polymorphism&amp;quot;&amp;gt;3. Polymorphism&amp;lt;/h3&amp;gt;
+&amp;lt;div class=&amp;quot;paragraph&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;Java supports both compile-time (method overloading) and runtime (method overriding) polymorphism.&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;sect2&amp;quot;&amp;gt;
+&amp;lt;h3 id=&amp;quot;_4_abstraction&amp;quot;&amp;gt;4. Abstraction&amp;lt;/h3&amp;gt;
+&amp;lt;div class=&amp;quot;paragraph&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;Java provides &amp;lt;code&amp;gt;abstract&amp;lt;/code&amp;gt; classes and &amp;lt;code&amp;gt;interfaces&amp;lt;/code&amp;gt; to hide implementation details and define contracts.&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;listingblock&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;content&amp;quot;&amp;gt;
+&amp;lt;pre class=&amp;quot;prettyprint highlight&amp;quot;&amp;gt;&amp;lt;code data-lang=&amp;quot;java&amp;quot;&amp;gt;interface PaymentProcessor {
+    void process(double amount);
+}
+
+class CreditCardProcessor implements PaymentProcessor {
+    public void process(double amount) {
+        System.out.println(&amp;quot;Processing credit card payment: &amp;quot; + amount);
+    }
+}&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;paragraph&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;Explanation:&amp;lt;/strong&amp;gt;
+The &amp;lt;code&amp;gt;PaymentProcessor&amp;lt;/code&amp;gt; interface defines &amp;lt;strong&amp;gt;what&amp;lt;/strong&amp;gt; should be done (&amp;lt;code&amp;gt;process&amp;lt;/code&amp;gt;), but not &amp;lt;strong&amp;gt;how&amp;lt;/strong&amp;gt;. &amp;lt;code&amp;gt;CreditCardProcessor&amp;lt;/code&amp;gt; provides the actual implementation. This allows different payment processors to be swapped without changing the calling code.&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;sect1&amp;quot;&amp;gt;
+&amp;lt;h2 id=&amp;quot;_additional_oop_friendly_features&amp;quot;&amp;gt;Additional OOP-Friendly Features&amp;lt;/h2&amp;gt;
+&amp;lt;div class=&amp;quot;sectionbody&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;ulist&amp;quot;&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;Packages&amp;lt;/strong&amp;gt; for organizing classes into namespaces.&amp;lt;/p&amp;gt;
+&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;Garbage Collection&amp;lt;/strong&amp;gt; to manage object lifecycles automatically.&amp;lt;/p&amp;gt;
+&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;Strong Typing&amp;lt;/strong&amp;gt; to catch errors at compile time.&amp;lt;/p&amp;gt;
+&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;sect1&amp;quot;&amp;gt;
+&amp;lt;h2 id=&amp;quot;_why_this_matters&amp;quot;&amp;gt;Why This Matters&amp;lt;/h2&amp;gt;
+&amp;lt;div class=&amp;quot;sectionbody&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;paragraph&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;By embracing OOP, Java enables developers to:
+- Model real-world systems naturally.
+- Build modular, maintainable, and reusable codebases.
+- Scale applications without losing structure.&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;sect1&amp;quot;&amp;gt;
+&amp;lt;h2 id=&amp;quot;_conclusion&amp;quot;&amp;gt;Conclusion&amp;lt;/h2&amp;gt;
+&amp;lt;div class=&amp;quot;sectionbody&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;paragraph&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;Java’s syntax, libraries, and runtime are all designed to encourage OOP best practices. Whether you’re building a small utility or a large enterprise system, understanding Java’s OOP features is key to writing clean, maintainable code.&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;</description>	  
+    </item><item>
+      <title>What is Object-Oriented Programming?</title>
+      <link>http://jbake.org/blog/2025-09-14-what-is-object-oriented-programming.html</link>
+      <pubDate>Sun, 14 Sep 2025 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">blog/2025-09-14-what-is-object-oriented-programming.html</guid>
+      <description>&amp;lt;div id=&amp;quot;preamble&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;sectionbody&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;paragraph&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;Object-Oriented Programming (OOP) is a programming paradigm built around the concept of &amp;lt;strong&amp;gt;objects&amp;lt;/strong&amp;gt; — self-contained units that combine &amp;lt;strong&amp;gt;data&amp;lt;/strong&amp;gt; (attributes) and &amp;lt;strong&amp;gt;behavior&amp;lt;/strong&amp;gt; (methods) into a single entity.&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;sect1&amp;quot;&amp;gt;
+&amp;lt;h2 id=&amp;quot;_why_oop_exists&amp;quot;&amp;gt;Why OOP Exists&amp;lt;/h2&amp;gt;
+&amp;lt;div class=&amp;quot;sectionbody&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;paragraph&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;Before OOP, most software followed a &amp;lt;strong&amp;gt;procedural&amp;lt;/strong&amp;gt; style: step-by-step instructions operating on shared data. This worked for small programs but became messy and hard to maintain as systems grew. OOP solves this by modeling software after real-world entities, making code more modular, reusable, and easier to reason about.&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;sect1&amp;quot;&amp;gt;
+&amp;lt;h2 id=&amp;quot;_core_principles_of_oop&amp;quot;&amp;gt;Core Principles of OOP&amp;lt;/h2&amp;gt;
+&amp;lt;div class=&amp;quot;sectionbody&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;sect2&amp;quot;&amp;gt;
+&amp;lt;h3 id=&amp;quot;_1_encapsulation&amp;quot;&amp;gt;1. Encapsulation&amp;lt;/h3&amp;gt;
+&amp;lt;div class=&amp;quot;paragraph&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;Encapsulation means bundling data and the methods that operate on it into a single unit, and restricting direct access to some of the object&amp;amp;#8217;s components.&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;listingblock&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;content&amp;quot;&amp;gt;
+&amp;lt;pre class=&amp;quot;prettyprint highlight&amp;quot;&amp;gt;&amp;lt;code data-lang=&amp;quot;java&amp;quot;&amp;gt;public class BankAccount {
+    private double balance;
+
+    public void deposit(double amount) {
+        balance += amount;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+}&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;paragraph&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;Explanation:&amp;lt;/strong&amp;gt;
+Here, &amp;lt;code&amp;gt;balance&amp;lt;/code&amp;gt; is private and cannot be accessed directly from outside the class. The only way to change or read it is through the &amp;lt;code&amp;gt;deposit&amp;lt;/code&amp;gt; and &amp;lt;code&amp;gt;getBalance&amp;lt;/code&amp;gt; methods, which control how the data is used.&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;sect2&amp;quot;&amp;gt;
+&amp;lt;h3 id=&amp;quot;_2_abstraction&amp;quot;&amp;gt;2. Abstraction&amp;lt;/h3&amp;gt;
+&amp;lt;div class=&amp;quot;paragraph&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;Abstraction hides implementation details and exposes only the necessary features.&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;paragraph&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;Example: You can drive a car without knowing how the engine works — in code, this means exposing a simple interface while hiding complex internals.&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;sect2&amp;quot;&amp;gt;
+&amp;lt;h3 id=&amp;quot;_3_inheritance&amp;quot;&amp;gt;3. Inheritance&amp;lt;/h3&amp;gt;
+&amp;lt;div class=&amp;quot;paragraph&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;Inheritance allows one class to acquire the properties and methods of another, promoting code reuse.&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;listingblock&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;content&amp;quot;&amp;gt;
+&amp;lt;pre class=&amp;quot;prettyprint highlight&amp;quot;&amp;gt;&amp;lt;code data-lang=&amp;quot;java&amp;quot;&amp;gt;class Vehicle {
+    void start() { System.out.println(&amp;quot;Starting...&amp;quot;); }
+}
+
+class Car extends Vehicle {
+    void honk() { System.out.println(&amp;quot;Beep!&amp;quot;); }
+}&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;paragraph&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;Explanation:&amp;lt;/strong&amp;gt;
+&amp;lt;code&amp;gt;Car&amp;lt;/code&amp;gt; inherits the &amp;lt;code&amp;gt;start()&amp;lt;/code&amp;gt; method from &amp;lt;code&amp;gt;Vehicle&amp;lt;/code&amp;gt; and adds its own &amp;lt;code&amp;gt;honk()&amp;lt;/code&amp;gt; method. This lets you reuse existing behavior and extend it with new features.&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;sect2&amp;quot;&amp;gt;
+&amp;lt;h3 id=&amp;quot;_4_polymorphism&amp;quot;&amp;gt;4. Polymorphism&amp;lt;/h3&amp;gt;
+&amp;lt;div class=&amp;quot;paragraph&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;Polymorphism lets the same operation behave differently on different classes.&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;listingblock&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;content&amp;quot;&amp;gt;
+&amp;lt;pre class=&amp;quot;prettyprint highlight&amp;quot;&amp;gt;&amp;lt;code data-lang=&amp;quot;java&amp;quot;&amp;gt;interface Shape { void draw(); }
+
+class Circle implements Shape {
+    public void draw() { System.out.println(&amp;quot;Drawing Circle&amp;quot;); }
+}
+
+class Square implements Shape {
+    public void draw() { System.out.println(&amp;quot;Drawing Square&amp;quot;); }
+}&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;paragraph&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;Explanation:&amp;lt;/strong&amp;gt;
+Both &amp;lt;code&amp;gt;Circle&amp;lt;/code&amp;gt; and &amp;lt;code&amp;gt;Square&amp;lt;/code&amp;gt; implement the same &amp;lt;code&amp;gt;Shape&amp;lt;/code&amp;gt; interface, but each provides its own &amp;lt;code&amp;gt;draw()&amp;lt;/code&amp;gt; method. This allows you to write code that works with &amp;lt;code&amp;gt;Shape&amp;lt;/code&amp;gt; objects without knowing their exact type.&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;sect1&amp;quot;&amp;gt;
+&amp;lt;h2 id=&amp;quot;_benefits_of_oop&amp;quot;&amp;gt;Benefits of OOP&amp;lt;/h2&amp;gt;
+&amp;lt;div class=&amp;quot;sectionbody&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;ulist&amp;quot;&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;Modularity&amp;lt;/strong&amp;gt;: Code is organized into independent classes.&amp;lt;/p&amp;gt;
+&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;Reusability&amp;lt;/strong&amp;gt;: Classes can be reused across projects.&amp;lt;/p&amp;gt;
+&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;Maintainability&amp;lt;/strong&amp;gt;: Changes in one part of the system have minimal ripple effects.&amp;lt;/p&amp;gt;
+&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;Scalability&amp;lt;/strong&amp;gt;: Easier to extend with new features.&amp;lt;/p&amp;gt;
+&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;sect1&amp;quot;&amp;gt;
+&amp;lt;h2 id=&amp;quot;_final_thoughts&amp;quot;&amp;gt;Final Thoughts&amp;lt;/h2&amp;gt;
+&amp;lt;div class=&amp;quot;sectionbody&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;paragraph&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;OOP is not tied to a single language — it’s a way of thinking about and structuring code. Mastering its principles will make you a more effective developer, regardless of the tools you use.&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
 &amp;lt;/div&amp;gt;
 &amp;lt;/div&amp;gt;</description>	  
     </item>

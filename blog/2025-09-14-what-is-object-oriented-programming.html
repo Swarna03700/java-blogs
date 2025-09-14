@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 	    <meta charset="utf-8"/>
-	    <title>Hello, Java</title>
+	    <title>What is Object-Oriented Programming?</title>
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	    <meta name="description" content=""/>
 	    <meta name="author" content=""/>
@@ -12,15 +12,15 @@
 
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 	    <!-- Le styles -->
-	    <link href="css/bootstrap.min.css" rel="stylesheet"/>
-	    <link href="css/asciidoctor.css" rel="stylesheet"/>
-	    <link href="css/base.css" rel="stylesheet"/>
-	    <link href="css/prettify.css" rel="stylesheet"/>
-		<link href="css/theme.css" rel="stylesheet"/>
+	    <link href="../css/bootstrap.min.css" rel="stylesheet"/>
+	    <link href="../css/asciidoctor.css" rel="stylesheet"/>
+	    <link href="../css/base.css" rel="stylesheet"/>
+	    <link href="../css/prettify.css" rel="stylesheet"/>
+		<link href="../css/theme.css" rel="stylesheet"/>
 
 	    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 	    <!--[if lt IE 9]>
-	      <script src="js/html5shiv.min.js"></script>
+	      <script src="../js/html5shiv.min.js"></script>
 	    <![endif]-->
 	
 	    <!-- Fav and touch icons -->
@@ -28,7 +28,7 @@
 	    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png"/>
 	    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png"/>
 	    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png"/>-->
-	    <link rel="shortcut icon" href="favicon.ico"/>
+	    <link rel="shortcut icon" href="../favicon.ico"/>
 	</head>
 	<body onload="prettyPrint()">
 	<div id="wrap">
@@ -45,13 +45,13 @@
             <span class="icon-bar"></span>
           </button>
           
-           <a class="navbar-brand" href=""><img src="assets/hello-java-logo.png" alt="Site Logo" style="height: 30px; margin-top: -10px;"/></a>
+           <a class="navbar-brand" href="../"><img src="../assets/hello-java-logo.png" alt="Site Logo" style="height: 30px; margin-top: -10px;"/></a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="feed.xml">Subscribe</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../feed.xml">Subscribe</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
               <ul class="dropdown-menu">
@@ -71,180 +71,14 @@
 
 	</div>
 		<div class="container">
+	
 			<div class="page-header">
-				<h1>Blog</h1>
+				<h1>What is Object-Oriented Programming?</h1>
 			</div>
-			
-			<div>
-				<a href='blog/2025-09-14-hello-java.html'><h1>Hello Java</h1></a>
-				<p>14 September 2025</p>
-				<p><div class="paragraph">
-<p>This is a simple "Hello, World!" program written in Java.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code data-lang="java">public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
-}</code></pre>
-</div>
-</div></p>
-				<p><div class="paragraph">
-<p>This is a simple "Hello, World!" program written in Java.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code data-lang="...</p>
-			</div>
-			
-			<div>
-				<a href='blog/2025-09-14-what-makes-java-an-object-oriented-programming-language.html'><h1>What Makes Java an Object-Oriented Programming Language?</h1></a>
-				<p>14 September 2025</p>
-				<p><div id="preamble">
-<div class="sectionbody">
-<div class="paragraph">
-<p>Java is often described as a <strong>pure</strong> object-oriented language — and while there’s debate about that term, there’s no doubt that Java’s design is deeply rooted in OOP principles.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_everything_revolves_around_objects">Everything Revolves Around Objects</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>In Java, almost everything (except primitives) is an object. Classes define the blueprint, and objects are the runtime instances that hold state and behavior.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code data-lang="java">public class Employee {
-    private String name;
-    private double salary;
-
-    public Employee(String name, double salary) {
-        this.name = name;
-        this.salary = salary;
-    }
-
-    public void raiseSalary(double percent) {
-        salary += salary * percent / 100;
-    }
-}</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p><strong>Explanation:</strong>
-Here, <code>Employee</code> is a class (the blueprint), and each <code>Employee</code> object has its own <code>name</code> and <code>salary</code>. The <code>raiseSalary</code> method changes the state of that specific object — a core OOP idea.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_how_java_implements_oop_principles">How Java Implements OOP Principles</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_1_encapsulation">1. Encapsulation</h3>
-<div class="paragraph">
-<p>Java enforces encapsulation through access modifiers (<code>private</code>, <code>protected</code>, <code>public</code>) and getter/setter methods.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_2_inheritance">2. Inheritance</h3>
-<div class="paragraph">
-<p>Java supports single inheritance via the <code>extends</code> keyword, and multiple inheritance of type via <code>interfaces</code>.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code data-lang="java">class Animal {
-    void eat() { System.out.println("Eating..."); }
-}
-
-class Dog extends Animal {
-    void bark() { System.out.println("Barking..."); }
-}</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p><strong>Explanation:</strong>
-<code>Dog</code> inherits the <code>eat()</code> method from <code>Animal</code> without rewriting it, and adds its own <code>bark()</code> method. This shows how Java reuses and extends behavior.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_3_polymorphism">3. Polymorphism</h3>
-<div class="paragraph">
-<p>Java supports both compile-time (method overloading) and runtime (method overriding) polymorphism.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_4_abstraction">4. Abstraction</h3>
-<div class="paragraph">
-<p>Java provides <code>abstract</code> classes and <code>interfaces</code> to hide implementation details and define contracts.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code data-lang="java">interface PaymentProcessor {
-    void process(double amount);
-}
-
-class CreditCardProcessor implements PaymentProcessor {
-    public void process(double amount) {
-        System.out.println("Processing credit card payment: " + amount);
-    }
-}</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p><strong>Explanation:</strong>
-The <code>PaymentProcessor</code> interface defines <strong>what</strong> should be done (<code>process</code>), but not <strong>how</strong>. <code>CreditCardProcessor</code> provides the actual implementation. This allows different payment processors to be swapped without changing the calling code.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_additional_oop_friendly_features">Additional OOP-Friendly Features</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Packages</strong> for organizing classes into namespaces.</p>
-</li>
-<li>
-<p><strong>Garbage Collection</strong> to manage object lifecycles automatically.</p>
-</li>
-<li>
-<p><strong>Strong Typing</strong> to catch errors at compile time.</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_why_this_matters">Why This Matters</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>By embracing OOP, Java enables developers to:
-- Model real-world systems naturally.
-- Build modular, maintainable, and reusable codebases.
-- Scale applications without losing structure.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_conclusion">Conclusion</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Java’s syntax, libraries, and runtime are all designed to encourage OOP best practices. Whether you’re building a small utility or a large enterprise system, understanding Java’s OOP features is key to writing clean, maintainable code.</p>
-</div>
-</div>
-</div></p>
-				<p><div id="preamble">
-<div class="sectionbody">
-<div class="paragraph">
-<p>Java is often described as a <strong>pure</strong> object-oriented language — and while there’s debate about that term, ther...</p>
-			</div>
-			
-			<div>
-				<a href='blog/2025-09-14-what-is-object-oriented-programming.html'><h1>What is Object-Oriented Programming?</h1></a>
-				<p>14 September 2025</p>
-				<p><div id="preamble">
+		
+			<p><em>14 September 2025</em></p>
+		
+			<p><div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
 <p>Object-Oriented Programming (OOP) is a programming paradigm built around the concept of <strong>objects</strong> — self-contained units that combine <strong>data</strong> (attributes) and <strong>behavior</strong> (methods) into a single entity.</p>
@@ -371,18 +205,11 @@ Both <code>Circle</code> and <code>Square</code> implement the same <code>Shape<
 </div>
 </div>
 </div></p>
-				<p><div id="preamble">
-<div class="sectionbody">
-<div class="paragraph">
-<p>Object-Oriented Programming (OOP) is a programming paradigm built around the concept of <strong>objects</strong> — self-cont...</p>
-			</div>
-				
+		
 			<hr />
 			
-			<p>Older posts are available in the <a href='archive.html'>archive</a>.</p>
 		</div>
 	</div>
-	
 	<div>
 			<div id="push"></div>
     
@@ -395,9 +222,9 @@ Both <code>Circle</code> and <code>Square</code> implement the same <code>Shape<
 		    <!-- Le javascript
 		    ================================================== -->
 		    <!-- Placed at the end of the document so the pages load faster -->
-		    <script src="js/jquery-1.11.1.min.js"></script>
-		    <script src="js/bootstrap.min.js"></script>
-		    <script src="js/prettify.js"></script>
+		    <script src="../js/jquery-1.11.1.min.js"></script>
+		    <script src="../js/bootstrap.min.js"></script>
+		    <script src="../js/prettify.js"></script>
     
     	</div>
     </body>
